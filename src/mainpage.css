@@ -1,0 +1,123 @@
+/* Navbar.css */
+.outer {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: white;
+  font-family: monospace;
+}
+
+.navbar-logo img {
+  height: 40px;
+  float: left;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  margin-left: -12em;
+}
+
+.navbar-links li {
+  margin-right: 4rem;
+}
+
+.navbar-links a {
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.contact-button {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px white solid;
+  border-radius: 15px;
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.main-heading {
+  color: white;
+  font-size: 12em;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 1em;
+  font-family: monospace;
+  z-index: 1;
+}
+.main {
+  position: relative;
+  text-align: center;
+}
+.Box {
+  position: absolute;
+  animation: Move 2.5s infinite alternate;
+  display: flex;
+  max-width: 100%;
+  transform: rotate(-5deg);
+  z-index: 2;
+  margin-top: -13em;
+  margin-left: 22em;
+  
+}
+@keyframes Move {
+  0% {
+    transform:  translateY(-30px) rotate(5deg);
+  }
+ 
+}
+.Lock {
+  position: absolute;
+  max-width: 100%;
+  z-index: 3;
+  animation: MoveKey 2.5s infinite alternate;
+  margin-left: -6em;
+  margin-top: -2em;
+}
+@keyframes MoveKey {
+  0% {
+    transform:  translateY(30px) rotate(-5deg);
+  }
+}
+
+.Buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 12em;
+  margin-left: 4em;
+}
+
+.button1 {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+  border: none;
+}
+.button1:hover {
+  background-color: linear-gradient(to bottom, #ff5c00, #db00ff);
+  border: none;
+}
+
+.button2 {
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 0 1rem;
+  margin-left: 10px;
+  background: linear-gradient(to bottom, #ff5c00, #db00ff);
+  cursor: pointer;
+  transition: background 10s ease-in-out;
+  font-family: monospace;
+}
+.button2:hover {
+  background: linear-gradient(to bottom, #db00ff, #ff5c00);
+}
